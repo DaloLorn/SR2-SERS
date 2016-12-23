@@ -1,4 +1,5 @@
 Name: SERS - Turn-based SR2
 	Compatibility: 200
 	Base Mod: True
+	Derives From: base
 	Description: A turn-based conversion mod for Star Ruler 2.
