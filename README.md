@@ -65,6 +65,11 @@ Programmer-specific requirements:
 - An understanding of algorithms and how to make them.
 - Preferably some knowledge of AngelScript syntax and Star Ruler 2 script files. Really, the algorithm part is *a lot* more important.
 
+UI programmer-specific requirements:
+
+- All of the programmer-specific requirements
+- The ability to design a UI without a [WYSIWYG](https://en.wikipedia.org/wiki/WYSIWYG) editor. (Or, better yet, the ability to program such an editor for the SR2 UI, which will earn the gratitude of every wannabe UI modder in this community - myself included.)
+
 The requirements for a content designer are somewhat broader and don't need to be met *simultaneously*, I suppose:
 
 - Ideas.
