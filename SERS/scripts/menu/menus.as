@@ -61,9 +61,9 @@ string latestSave;
 
 void init() {
 	//Show the version
-	@version = GuiText(null, Alignment(Right-200, Bottom-20, Right-4, Bottom));
+	@version = GuiText(null, Alignment(Right-1000, Bottom-20, Right-4, Bottom));
 	version.horizAlign = 1.0;
-	version.text = format("Version: $1 ($2)", GAME_VERSION, SCRIPT_VERSION);
+	version.text = "SERS " + GAME_VERSION;
 	version.color = Color(0xaaaaaaaa);
 
 	//Create container

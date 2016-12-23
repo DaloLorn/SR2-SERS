@@ -210,6 +210,21 @@ class GameOptions : OptionsBox {
 			panel, recti_area(8, y,  550, 28),
 			locale::OPT_ROTATE_OBJS, "bRotateUIObjects"
 		));
+		y += 34;
+		GuiEngineToggle IRCtoggle(
+			panel, recti_area(8, y,  278, 28),
+			locale::OPT_AUTO_IRC, "bAutoEnableIRC"
+		);
+		setMarkupTooltip(IRCtoggle, locale::OPTTT_AUTO_IRC);
+		options.insertLast(IRCtoggle);
+
+		y += 34;
+		GuiEngineToggle sensorToggle(
+			panel, recti_area(8, y,  278, 28),
+			locale::OPT_DISPLAY_SENSOR_RANGE, "bDisplaySensorRange"
+		);
+		setMarkupTooltip(sensorToggle, locale::OPTTT_DISPLAY_SENSOR_RANGE);
+		options.insertLast(sensorToggle);
 
 		y += 38;
 		options.insertLast(GuiEngineToggle(
@@ -746,6 +761,22 @@ class AudioOptions : OptionsBox {
 		y += 32;
 		options.insertLast(GuiAudioOption(
 			panel, recti_area(8, y, 550, 32)));
+
+		y += 34;
+		GuiEngineToggle MTEtoggle(
+			panel, recti_area(8, y,  278, 28),
+			locale::OPT_MTE, "bEnableMTE"
+		);
+		setMarkupTooltip(MTEtoggle, locale::OPTTT_MTE);
+		options.insertLast(MTEtoggle);
+
+		y += 34;
+		GuiEngineToggle themeLooptoggle(
+			panel, recti_area(8, y,  278, 28),
+			locale::OPT_THEME_LOOP, "bLoopTheme"
+		);
+		setMarkupTooltip(themeLooptoggle, locale::OPTTT_THEME_LOOP);
+		options.insertLast(themeLooptoggle);
 	}
 };
 
